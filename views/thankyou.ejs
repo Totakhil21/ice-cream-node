@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Order!</title>
+    <link rel="stylesheet" href="/style/icecream.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Thank you for your order!<%= order.fname %></h1>
+
+        <h2>Order Details</h2>
+
+        <p>Name: <%= order.fname %>   </p>
+        <p>Email: <%= order.email %> </p>
+        <p>Choose your cone: <%= order.method %> </p>
+        <p>Topping: <%= order.toppings %></p>
+        
+        <a href="/" class="button">Place Another Order</a>
+    </div>
+</body>
+</html>

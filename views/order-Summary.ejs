@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="/public/style/icecream.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Order Summary</h1>
+
+        <ul><% for (let i = 0; i < orders.length;i++) { %>
+            <li><%= orders[i].fname %></li>
+    
+       <%   }%>
+    </div>
+</body>
+</html>

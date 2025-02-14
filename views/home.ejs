@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Order Form</title>
+
+    <link rel="icon" type="icon" href="free-ice-cream-coloring-page.png">
+    <link rel="stylesheet" href="/style/icecream.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Ice Cream Order</h1>
+
+        <form method="post" action="/thankyou">  <!-- Form now POSTs to /thankyou -->
+
+        <fieldset class="form">
+            <legend id="Personal">Personal Information</legend>
+            <label class="name">Name:
+                <input class="text" type="text" name="fname" required>
+            </label>
+
+            <label>Email:
+                <input class="text" type="email" name="email" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend id="Personal">Order Details</legend>
+            <select name="flavor" id="flavor" required>
+                <option value="none">Choose your flavor:</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Cookies and Cream">Cookies and Cream</option>
+            </select>
+
+            <legend class="cone">Choose your cone:</legend>
+            <label>
+                <input type="radio" name="method" value="Waffle cone" required> Waffle Cone
+            </label>
+            <label>
+                <input type="radio" name="method" value="Sugar cone" required> Sugar Cone
+            </label>
+            <label>
+                <input type="radio" name="method" value="Cup" required> Cup
+            </label>
+
+            <legend class="Topping">Toppings:</legend>
+            <label>
+                <input type="checkbox" name="Toppings" value="Sprinkles"> Sprinkles
+            </label>
+            <label>
+                <input type="checkbox" name="Toppings" value="Nuts"> Nuts
+            </label>
+            <label>
+                <input type="checkbox" name="Toppings" value="Cherry"> Cherry
+            </label>
+            <label>
+                <input type="checkbox" name="Toppings" value="Whipped Cream"> Whipped Cream
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Comments</legend>
+            <textarea name="Comments" id="Comments"></textarea>
+        </fieldset>
+
+        <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
